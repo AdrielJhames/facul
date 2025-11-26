@@ -97,25 +97,25 @@ include __DIR__ . '/../includes/header.php';
 ?>
 <h2><?php echo $modo === 'criar' ? 'nova noticia' : 'editar noticia'; ?></h2>
 <?php if (!empty($erros)): ?>
-<ul class="erros">
-<?php foreach ($erros as $e): ?>
-<li><?php echo htmlspecialchars($e); ?></li>
-<?php endforeach; ?>
-</ul>
+    <ul class="erros">
+        <?php foreach ($erros as $e): ?>
+            <li><?php echo htmlspecialchars($e); ?></li>
+        <?php endforeach; ?>
+    </ul>
 <?php endif; ?>
 <form method="post" class="form-noticia">
-<label>Título</label>
-<input type="text" name="titulo" maxlength="150" value="<?php echo htmlspecialchars($titulo); ?>" required>
-<label>Categoria</label>
-<input type="text" name="categoria" maxlength="50" value="<?php echo htmlspecialchars($categoria); ?>" required>
-<label>Conteudo</label>
-<textarea name="conteudo" rows="6" required><?php echo htmlspecialchars($conteudo); ?></textarea>
-<label class="check">
-<input type="checkbox" name="destaque" value="1" <?php echo $destaque ? 'checked' : ''; ?>>
-Notícia em destaque
-</label>
-<button type="submit"><?php echo $modo === 'criar' ? 'criar' : 'salvar'; ?></button>
-<a class="botao secundario" href="noticias_listar.php">Voltar</a>
+    <label>Título</label>
+    <input type="text" name="titulo" maxlength="150" value="<?php echo htmlspecialchars($titulo); ?>" required>
+    <label>Categoria</label>
+    <input type="text" name="categoria" maxlength="50" value="<?php echo htmlspecialchars($categoria); ?>" required>
+    <label>Conteudo</label>
+    <textarea name="conteudo" rows="6" required><?php echo htmlspecialchars($conteudo); ?></textarea>
+    <label class="check">
+        <input type="checkbox" name="destaque" value="1" <?php echo $destaque ? 'checked' : ''; ?>>
+        Notícia em destaque
+    </label>
+    <button type="submit"><?php echo $modo === 'criar' ? 'criar' : 'salvar'; ?></button>
+    <a class="botao secundario" href="noticias_listar.php">Voltar</a>
 </form>
 <?php
 include __DIR__ . '/../includes/footer.php';

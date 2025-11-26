@@ -43,14 +43,14 @@ include __DIR__ . '/../includes/header.php';
 ?>
 <h2>Login</h2>
 <form method="post" class="form-login">
-<label>Email</label>
-<input type="email" name="email" required>
-<label>Senha</label>
-<input type="password" name="senha" required>
-<?php if ($erro): ?>
-<p class="erro"><?php echo htmlspecialchars($erro); ?></p>
-<?php endif; ?>
-<button type="submit">Entrar</button>
+    <label>Email</label>
+    <input type="email" name="email" required>
+    <label>Senha</label>
+    <input type="password" name="senha" required>
+    <?php if ($erro): ?>
+        <p class="erro"><?php echo htmlspecialchars($erro); ?></p>
+    <?php endif; ?>
+    <button type="submit">Entrar</button>
 </form>
 <?php
 include __DIR__ . '/../includes/footer.php';

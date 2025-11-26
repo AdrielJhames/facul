@@ -62,24 +62,34 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 include __DIR__ . '/../includes/header.php';
 ?>
 <h2>Cadastro de usuario</h2>
+
 <?php if (!empty($erros)): ?>
-<ul class="erros">
-<?php foreach ($erros as $e): ?>
-<li><?php echo htmlspecialchars($e); ?></li>
-<?php endforeach; ?>
-</ul>
+    <ul class="erros">
+
+        <?php foreach ($erros as $e): ?>
+
+            <li><?php echo htmlspecialchars($e); ?></li>
+        <?php endforeach; ?>
+
+    </ul>
 <?php endif; ?>
 <form method="post" class="form-cadastro">
-<label>Nome</label>
-<input type="text" name="nome" maxlength="100" value="<?php echo htmlspecialchars($nome); ?>" required>
-<label>Email</label>
-<input type="email" name="email" maxlength="100" value="<?php echo htmlspecialchars($email); ?>" required>
-<label>Senha</label>
-<input type="password" name="senha" required>
-<label>Confirmar senha</label>
-<input type="password" name="senha2" required>
-<button type="submit">Cadastrar</button>
-<a class="botao secundario" href="../public/login.php">Já possuo uma conta</a>
+    <label>Nome</label>
+
+    <input type="text" name="nome" maxlength="100" value="<?php echo htmlspecialchars($nome); ?>" required>
+    <label>Email</label>
+
+    <input type="email" name="email" maxlength="100" value="<?php echo htmlspecialchars($email); ?>" required>
+    <label>Senha</label>
+
+    <input type="password" name="senha" required>
+    <label>Confirmar senha</label>
+
+    <input type="password" name="senha2" required>
+    <button type="submit">Cadastrar</button>
+
+    <a class="botao secundario" href="../public/login.php">Já possuo uma conta</a>
 </form>
+
 <?php
 include __DIR__ . '/../includes/footer.php';
