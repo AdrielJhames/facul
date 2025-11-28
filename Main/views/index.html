@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="../assets/images/iconbodyquest.png" type="image/png">
+  <title>BodyQuest</title>
+  <meta name="description"
+    content="Organize seus treinos, metas diárias e rotina de saúde em um só lugar. No BodyQuest você registra treino, água e sono e acompanha se cumpriu a meta do dia de forma simples.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../assets/stylesheets/global.css" />
+  <link rel="stylesheet" href="../assets/stylesheets/index.css" />
+</head>
+
+<body>
+
+
+  <header class="nav">
+    <div class="container nav-wrap">
+      <a href="#inicio" class="brand" aria-label="BodyQuest — ir para o início">
+        <img class="logo" src="../assets/images/logobodyquest.png" alt="" width="132" height="28" decoding="async"
+          fetchpriority="high">
+      </a>
+
+      <nav id="menu" class="menu" aria-label="Navegação principal">
+        <a href="#inicio">Início</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#como-funciona">Como funciona</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="btn" data-open="login">Entrar</button>
+        <button class="btn primary" data-open="cadastro">Cadastre-se</button>
+      </div>
+    </div>
+  </header>
+
+  <section id="inicio" class="hero">
+    <div class="container hero-grid">
+      <div>
+        <span class="h2">BodyQuest</span>
+        <h1 class="h1">Sua rotina saudável, sob controle</h1>
+        <p class="lead">
+          Planeje o treino, defina a meta de água, escolha sua faixa de sono
+          e acompanhe se o dia foi cumprido. Tudo isso em um painel simples,
+          com treinos, metas diárias e perfil no mesmo lugar.
+        </p>
+        <div class="cta">
+          <a href="#cadastro" class="btn primary" data-open="cadastro">Começar agora</a>
+          <a href="#sobre" class="btn">Ver como funciona</a>
+        </div>
+      </div>
+
+      <div class="photo-wrap">
+        <img class="ph" alt="Pessoa treinando na academia" src="../assets/images/imagemtreino.webp" />
+      </div>
+    </div>
+  </section>
+
+  <section id="sobre">
+    <div class="container section-grid">
+      <div>
+        <h2 class="h2">Centralize seus hábitos em um só sistema</h2>
+        <p class="p">
+          Com o BodyQuest você registra as metas do dia (treino, água e sono),
+          monta seus treinos personalizados e ajusta o perfil com peso, altura
+          e objetivos. O dashboard mostra se a meta de hoje foi concluída,
+          qual é o treino do dia e um resumo rápido da sua rotina.
+        </p>
+      </div>
+      <div class="card-img">
+        <img class="ph" alt="Pessoa correndo ao ar livre" src="../assets/images/correndo.jpg" />
+      </div>
+    </div>
+  </section>
+
+
+  <section id="como-funciona">
+    <div class="container" style="display:grid; gap:28px">
+      <h3 class="h2">Como funciona</h3>
+      <ul class="p" style="list-style:none; padding:0; margin:0; display:grid; gap:.6rem">
+        <li><strong>1. Crie sua conta</strong> — faça o cadastro com nome, e-mail e data de nascimento.</li>
+        <li><strong>2. Monte seu perfil</strong> — informe peso, altura, objetivos de treino e de peso.</li>
+        <li><strong>3. Defina as metas do dia</strong> — escolha o treino, a meta de água e a faixa de sono.</li>
+        <li><strong>4. Registre e ajuste</strong> — atualize as metas diárias e seus treinos sempre que precisar.</li>
+        <li><strong>5. Acompanhe no dashboard</strong> — veja se a meta foi cumprida e qual treino está marcado para hoje.</li>
+      </ul>
+    </div>
+  </section>
+
+
+  <section class="container" style="display:grid; gap:60px">
+
+    <div class="feature">
+      <div class="feature-copy">
+        <h3>Resumo do dia em poucos segundos</h3>
+        <p class="p">
+          O painel inicial mostra o status das metas de hoje, um aviso se ainda
+          não existe meta cadastrada e qual é o treino do dia. Assim você sabe
+          rapidamente como está sua rotina sem abrir várias telas.
+        </p>
+      </div>
+      <div class="feature-media card-img">
+        <img class="ph" alt="Grupo treinando junto" src="../assets/images/grupo.jpg" />
+      </div>
+    </div>
+
+    <div class="feature">
+      <div class="feature-copy">
+        <h3>Treinos organizados por dia</h3>
+        <p class="p">
+          Crie e gerencie seus treinos, cadastre exercícios com tipo, séries,
+          repetições e duração. Na home, o sistema destaca um treino como
+          “treino do dia” para facilitar sua próxima sessão.
+        </p>
+      </div>
+      <div class="feature-media card-img">
+        <img class="ph" alt="Lista de treinos organizada em um app" src="../assets/images/correndo.jpg" />
+      </div>
+    </div>
+
+    <div class="feature">
+      <div class="feature-copy">
+        <h3>Metas de água e sono sem complicação</h3>
+        <p class="p">
+          Registre quantos litros de água quer beber e qual faixa de sono
+          pretende seguir. O sistema marca automaticamente se a meta foi
+          cumprida com base nos critérios definidos.
+        </p>
+      </div>
+      <div class="feature-media card-img">
+        <img class="ph" alt="Copo de água e refeição saudável"
+          src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?q=80&w=1200&auto=format&fit=crop" />
+      </div>
+    </div>
+
+    <div class="feature">
+      <div class="feature-copy">
+        <h3>Perfil que ajuda a personalizar</h3>
+        <p class="p">
+          Use a página de perfil para atualizar peso, altura, gênero e objetivo
+          de treino. Essas informações servem como base para você ajustar suas
+          metas e acompanhar a evolução ao longo do tempo.
+        </p>
+      </div>
+      <div class="feature-media card-img">
+        <img class="ph" alt="Pessoa usando o celular para acompanhar hábitos" src="../assets/images/olhandocelular.jpg" />
+      </div>
+    </div>
+
+  </section>
+
+
+  <section>
+    <div class="container" style="display:grid; gap:12px; justify-items:center; text-align:center">
+      <span class="chip">Comece hoje</span>
+      <h2 class="h2" style="margin:8px 0 0; color:#fff">Metas simples, visão clara do seu dia.</h2>
+      <p class="p">Crie sua conta, configure seu perfil e comece a registrar treino, água e sono em poucos minutos.</p>
+      <div class="cta">
+        <button class="btn primary" data-open="cadastro">Criar conta grátis</button>
+        <button class="btn" data-open="login">Já tenho conta</button>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contato">
+    <div class="container foot-grid">
+      <div class="foot-brand">
+        <span class="logo" aria-hidden="true"></span>
+        BodyQuest
+      </div>
+      <div class="foot-links">
+        <a href="#">Privacidade</a>
+        <a href="#">Termos</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <div class="modal" id="login">
+    <div class="dialog" role="dialog" aria-modal="true" aria-labelledby="loginTitle">
+      <h4 id="loginTitle">Entrar</h4>
+      <form class="form" method="post" action="../api/login.php">
+        <div class="field">
+          <label class="label" for="login-email">E-mail</label>
+          <input class="input" id="login-email" name="email_login" type="email" placeholder="voce@exemplo.com" required>
+        </div>
+        <div class="field">
+          <label class="label" for="login-senha">Senha</label>
+          <input class="input" id="login-senha" name="senha_login" type="password" placeholder="Mínimo 6 caracteres" required
+            minlength="6">
+        </div>
+        <div class="actions">
+          <button type="button" class="btn" onclick="closeModal('login')">Cancelar</button>
+          <button class="btn primary" type="submit">Entrar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+
+  <div class="modal" id="cadastro">
+    <div class="dialog" role="dialog" aria-modal="true" aria-labelledby="cadTitle">
+      <h4 id="cadTitle">Criar conta</h4>
+      <form class="form" method="post" action="../api/cadastro.php" autocomplete="on" novalidate>
+        <div class="field">
+          <label class="label" for="nome">Nome completo</label>
+          <input class="input" id="nome" name="nome_cadastro" type="text" placeholder="">
+        </div>
+        <div class="field">
+          <label class="label" for="email">E-mail</label>
+          <input class="input" id="email" name="email_cadastro" type="email">
+        </div>
+        <div class="field">
+          <label class="label" for="nascimento">Data de Nascimento</label>
+          <input class="input" type="date" id="nascimento" name="nascimento_cadastro">
+        </div>
+        <div class="field">
+          <label class="label" for="senha">Senha</label>
+          <input class="input" id="senha" name="senha_cadastro" type="password" placeholder="Mínimo 6 caracteres">
+        </div>
+        <div class="field">
+          <label class="label" for="senha">Confirme sua senha</label>
+          <input class="input" id="confirmasenha" name="confirmasenha" type="password" placeholder="Confirme sua senha">
+        </div>
+        <div class="actions">
+          <button type="button" class="btn" onclick="closeModal('cadastro')">Cancelar</button>
+          <button class="btn primary" type="submit">Criar conta</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="../assets/javascript/index.js"></script>
+  <script src="../assets/javascript/includes.js"></script>
+  
+  <script>
+    function openModal(id) {
+      document.getElementById(id).classList.add('open');
+    }
+
+    const params = new URLSearchParams(window.location.search);
+    if (params.get('show') === 'login') {
+
+      const cadModal = document.getElementById('cadastro');
+      if (cadModal) cadModal.classList.remove('open');
+
+      openModal('login');
+    }
+  </script>
+
+
+</body>
+
+</html>
